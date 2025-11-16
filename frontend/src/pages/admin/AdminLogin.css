@@ -1,0 +1,47 @@
+.admin-login-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  padding: 2rem 0;
+}
+
+.admin-login-container {
+  width: 90%;
+  max-width: 450px;
+}
+
+.admin-login-form {
+  background: var(--white);
+  padding: 3rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.admin-login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.admin-login-header i {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.admin-login-header h2 {
+  color: var(--dark);
+}
+
+.admin-login-form .btn {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.admin-hint {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
