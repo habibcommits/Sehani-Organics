@@ -1,9 +1,10 @@
-modules = ["web", "python-3.11", "nodejs-20"]
+modules = ["nodejs-20", "web"]
 [agent]
 expertMode = true
 
 [nix]
 channel = "stable-25_05"
+packages = ["mongodb"]
 
 [workflows]
 runButton = "Project"
@@ -56,6 +57,10 @@ externalPort = 80
 [[ports]]
 localPort = 5001
 externalPort = 3001
+
+[[ports]]
+localPort = 41713
+externalPort = 3002
 
 [deployment]
 deploymentTarget = "autoscale"
