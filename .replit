@@ -59,4 +59,5 @@ externalPort = 3001
 
 [deployment]
 deploymentTarget = "autoscale"
-run = ["python3", "server.py"]
+run = ["bash", "-c", "cd backend && node server.js"]
+build = ["npm", "run", "build"]
