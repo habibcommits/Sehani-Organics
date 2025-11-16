@@ -18,7 +18,7 @@ header {
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: var(--dark);
+  color: var(--dark-text);
 }
 
 .logo-icon {
@@ -41,7 +41,7 @@ header {
 .nav-links a,
 .btn-link {
   text-decoration: none;
-  color: var(--dark);
+  color: var(--dark-text);
   font-weight: 500;
   transition: var(--transition);
   position: relative;

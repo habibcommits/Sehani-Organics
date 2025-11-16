@@ -1,10 +1,13 @@
 :root {
-  --primary: #d4a017;
-  --secondary: #8b4513;
-  --light: #fef9e7;
-  --dark: #2c1a0a;
-  --accent: #ffc107;
-  --white: #fff;
+  --primary: #FFC107;
+  --primary-amber: #FFB300;
+  --dark: #8D6E63;
+  --dark-text: #333333;
+  --light: #FFF8E1;
+  --accent: #FF8F00;
+  --nature-green: #558B2F;
+  --white: #FFFFFF;
+  --light-gray: #E0E0E0;
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
 }
@@ -18,7 +21,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: var(--light);
-  color: var(--dark);
+  color: var(--dark-text);
   line-height: 1.6;
 }
 
@@ -44,13 +47,13 @@ body {
 }
 
 .btn:hover {
-  background: var(--secondary);
+  background: var(--primary-amber);
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary {
-  background: var(--secondary);
+  background: var(--dark);
 }
 
 .btn-danger {
@@ -70,7 +73,7 @@ body {
 .form-control {
   width: 100%;
   padding: 0.8rem 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--light-gray);
   border-radius: 5px;
   font-size: 1rem;
   transition: var(--transition);
@@ -79,7 +82,7 @@ body {
 .form-control:focus {
   border-color: var(--primary);
   outline: none;
-  box-shadow: 0 0 0 3px rgba(212, 160, 23, 0.2);
+  box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.2);
 }
 
 select.form-control {
@@ -140,7 +143,7 @@ table th,
 table td {
   padding: 1rem;
   text-align: left;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--light-gray);
 }
 
 table th {
@@ -162,8 +165,8 @@ table tr:hover {
 }
 
 .badge-pending {
-  background: #ffc107;
-  color: #000;
+  background: var(--accent);
+  color: var(--white);
 }
 
 .badge-processing {
